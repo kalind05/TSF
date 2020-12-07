@@ -4,7 +4,6 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const User = require('./models/user');
 const History = require('./models/transactionHistory');
-// const { config } = require('dotenv/types');
 const env = require("dotenv")
 mongoose.Promise = global.Promise
 env.config()
@@ -42,7 +41,6 @@ mongoose.connection
   app.get('/transferMoney', (req, res) => {
     res.render('transferMoney',{title:'Transfer Money'});
   });
-
 
   app.get('/allUsers', (req, res) => {
     User.find({})
