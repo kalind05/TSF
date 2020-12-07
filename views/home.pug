@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  nav
+    .navbar
+      a(href='/') 
+        h2.bank-name GrowMore Bank
+      ul
+        li
+          a.active(href='/') Home
+        li
+          a(href='/transactionHistory') Transfer History
+        li
+          a(href='/allUsers') All Users
+  .contents
+    .container
+      .items.heading
+        h2 GrowMore Bank
+      .btn
+        button.btn-1
+          a(href='/allUsers') View All Customers
+        button.btn-1
+          a(href='/transferMoney') Transfer Money
+

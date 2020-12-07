@@ -1,0 +1,48 @@
+extends layout
+
+block content
+  nav
+    .navbar
+      a(href='/') 
+        h2.bank-name TSF Bank
+      ul
+        li
+          a(href='/') Home
+        li
+          a(href='/transactionHistory') Transfer History
+        li
+          a(href='/allUsers') All Users
+  .contents
+    .container
+      h1 Transfer Money
+      form.money#money(action="/" method="post")
+        //- input(type="text" name="name1" placeholder= "Select the Creditor" )
+        //- input(type="text" name="name2" placeholder= "Select the Recipient" )
+        select(name="name1" type="text")
+          option( selected) Select The Creditor
+          option(value="Rahul Sharma") Rahul Sharma
+          option(value="Aman Singh") Aman Singh
+          option(value="Rohan Gaur") Rohan Gaur
+          option(value="Srishti Dalal") Srishti Dalal
+          option(value="Khushi Narain") Khushi Narain
+          option(value="Tanvi Tripathi") Tanvi Tripathi
+          option(value="Devansh Gupta") Devansh Gupta
+          option(value="Rashmi Goel") Rashmi Goel
+          option(value="Vinay Saini") Vinay Saini
+          option(value="Apurva Chand")  Apurva Chand
+        select(name="name2" type="text")
+          option( selected) Select The Recipient
+          option(value="Rahul Sharma") Rahul Sharma
+          option(value="Aman Singh") Aman Singh
+          option(value="Rohan Gaur") Rohan Gaur
+          option(value="Srishti Dalal") Srishti Dalal
+          option(value="Khushi Narain") Khushi Narain
+          option(value="Tanvi Tripathi") Tanvi Tripathi
+          option(value="Devansh Gupta") Devansh Gupta
+          option(value="Rashmi Goel") Rashmi Goel
+          option(value="Vinay Saini") Vinay Saini
+          option(value="Apurva Chand")  Apurva Chand
+        
+        input(type="number" name="amount" placeholder= "Enter the Amount to Transfer: ₹" ) 
+          
+        button(type= "submit" name= "submit") Transfer

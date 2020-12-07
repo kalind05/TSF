@@ -1,0 +1,33 @@
+extends layout
+
+block content
+
+  nav
+    .navbar
+      a(href='/') 
+        h2.bank-name TSF Bank
+      ul
+        li
+          a(href='/') Home
+        li
+          a.active(href='/transactionHistory') Transfer History
+        li
+          a(href='/allUsers') All Users
+  .contents
+    .container
+      if histories.length
+        table#history
+          thead
+            tr
+              th Creditor
+              th Recipient
+              th Amount
+            tbody
+            each history in histories
+              tr
+                td= history.Creditor
+                td= history.Recipient
+                td= history.Amount
+      else 
+        h1.notrans No Transactions Yet!
+

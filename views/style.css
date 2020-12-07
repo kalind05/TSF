@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+}
+
+body{
+    background: url("https://png.pngtree.com/thumb_back/fh260/background/20190223/ourmid/pngtree-fresh-bank-card-machine-advertising-background-backgroundblue-backgroundmanmoneyhand-paintedatmsimplemachine-image_83842.jpg")  no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+    
+}
+.navbar{
+    background-color: rgb(0, 0, 0);
+    width: 100vw;
+    height: 48px;
+    
+}
+.navbar ul{
+    /* overflow: auto; */
+    margin-right: 5vw;
+    
+
+}
+.navbar li{
+    float: right;
+    list-style: none;
+    margin: 15px 5px;
+}
+
+.bank-name{
+    float: left;
+    border: 0.5px solid white;
+    color: aliceblue;
+    margin: 10px 30px;
+    margin-left: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.navbar li a{
+    color: aliceblue;    
+    text-decoration: none;
+    
+    padding: 8px 10px;
+
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar{
+        height: 100px;
+    }
+    ul{
+        float:left;
+        width: 100vw;
+        margin: auto auto;
+        box-sizing: border-box;
+    }
+
+
+  }  
+
+
+.active{
+    background-color: rgb(2, 62, 77);
+    border: 0.1px solid rgb(32, 137, 185);
+    color: rgb(255, 183, 183);
+    border-radius: 5px;
+    letter-spacing: 3px;
+    animation: ease-in;
+
+} 
+.navbar li a:hover{
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(236, 230, 230);
+    color: black;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    animation: ease-in;
+    transition-duration: 0.3s;
+}
+
+.contents{
+    height: 87vh;
+    width: 100vw;
+    
+}
+.container{
+    width: 100vw;
+    justify-content: contain;
+    height: 100vh;
+    
+    background-color: rgb(0, 0, 0, 0.3 );
+    
+
+}
+
+.items{
+    width: 250px;
+    margin: auto auto;
+    padding: 6vh 0;
+    
+}
+
+.heading{
+    font-size: 30px;
+    text-align: center;
+    color: rgb(171, 200, 226);
+   
+    padding-top: 20vh ;
+    width: fit-content;
+}
+.btn{
+    width: 100vw;
+    
+    
+}
+button{
+    border: none;
+    width: 50vw;
+    color: slategrey;
+    padding: 20px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px 20vw;
+    margin-left: 24vw;
+    
+
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-overflow: clip;
+    font-weight: bold;
+    font-size: larger;
+    
+    
+}
+button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.5),0 10px 40px 0 rgba(0, 0, 0, 0.19);
+    /* border: 1px solid black; */
+    /* transition-delay: .3s; */
+    /* font-style: italic; */
+    
+}
+
+
+
+/* ------------footer --------------*/
+footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+    background: rgb(49, 49, 49);
+    height: 7vh;
+    overflow: hidden;
+
+  }
+.social{
+    margin: 2px 45vw;
+    position: absolute;
+    width: 40vw;
+    bottom: 18px;
+    height: 5vh;
+    float: left;
+    /* border: 2px solid black; */
+    display: block;
+}
+.copyright{
+    float: left;
+    margin: 14px 10vw;
+}
+
+/* span{
+    border: 2px solid black;
+    padding: 6px 20px;
+    margin: 4px 10px;
+    position: relative;
+    top: 9px;
+    background: black
+    
+
+} */
+.social a{
+    /* border: 2px solid black; */
+    padding: 6px 2px;
+    margin: 4px 1px;
+    position: relative;
+    top: 9px;
+    /* background: black */
+}
+
+.social img{
+    width: 30px;
+    height: 30px;
+    border-radius: 9px;
+    margin: 8px;
+    /* border: 2px solid rgb(88, 88, 88) */
+}
+
+.instagram{
+    background-color: rgb(0, 0, 0);
+    
+}
+
+/* --------TransferMoney -------------*/
+
+.container h1{
+    color: rgb(22, 22, 65);
+    width: 30vw;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 3vh;
+    border: 1px dotted rgb(22, 22, 65);
+    border-top: none;
+
+}
+
+form{
+    height: 70vh;
+    width: 80vw;
+    
+    margin: auto auto;
+    align-items: center;   
+}
+form select, form input{
+    background-color: #0563af;
+    color: white;
+    padding: 12px;
+    width: 250px;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+    display: block;
+    width: 50vw;
+    text-align: center;
+    margin: 8vh auto;
+}
+
+form button{
+    width: 40vw;
+    position: relative;
+    margin: 5vh 0 0 0;
+    margin-left: 19vw;
+}
+
+/*----------------------- Transaction History Page------------------ */
+
+table{
+    width: 80vw;
+    height: 100%;
+    box-sizing: border-box;
+    display: table;
+    margin: 1px  10vw ;
+    
+    background-color: rgb(36, 73, 107, 0.5);
+    
+    border: 1px solid rgb(38, 38, 66);
+    
+}
+
+table tr, table td{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(216, 216, 216);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: 1px solid slategray;
+    height: 7vh;
+    
+}
+
+tbody{
+    height: 100%;
+    overflow-y: auto;
+}
+
+.notrans{
+    font-size: 50px;
+    text-align: center;
+    color: rgb(171, 200, 226);
+    height: 30vh;
+    width: fit-content;
+}

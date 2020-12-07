@@ -1,0 +1,31 @@
+extends layout
+
+block content
+  nav
+    .navbar
+      a(href='/') 
+        h2.bank-name TSF Bank
+      ul
+        li
+          a(href='/') Home
+        li
+          a(href='/transactionHistory') Transfer History
+        li
+          a.active(href='/allUsers') All Users
+  .contents
+    .container
+      if users.length
+        table#history
+          thead
+            tr
+              th Username
+              th Email
+              th Balance
+            tbody
+            each user in users
+              tr
+                td= user.Username
+                td= user.Email
+                td= user.Balance
+      else 
+        h1.notrans No Users Yet!
