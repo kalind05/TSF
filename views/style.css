@@ -3,7 +3,7 @@
 }
 
 body{
-    background: url("https://png.pngtree.com/thumb_back/fh260/background/20190223/ourmid/pngtree-fresh-bank-card-machine-advertising-background-backgroundblue-backgroundmanmoneyhand-paintedatmsimplemachine-image_83842.jpg")  no-repeat;
+    background: url("https://images.pexels.com/photos/904735/pexels-photo-904735.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260")  no-repeat;
     background-size: cover;
     background-attachment: fixed;
     overflow-x: hidden;
@@ -11,7 +11,7 @@ body{
     
 }
 .navbar{
-    background-color: rgb(0, 0, 0);
+    background-color:#ffce89;
     width: 100vw;
     height: 48px;
     
@@ -31,14 +31,14 @@ body{
 .bank-name{
     float: left;
     border: 0.5px solid white;
-    color: aliceblue;
+    color:black;
     margin: 10px 30px;
     margin-left: 40px;
     padding-left: 10px;
     padding-right: 10px;
 }
 .navbar li a{
-    color: aliceblue;    
+    color: black;    
     text-decoration: none;
     
     padding: 8px 10px;
@@ -66,9 +66,9 @@ a{
 
 
 .active{
-    background-color: rgb(2, 62, 77);
+    background-color: rgb(114, 210, 235);
     border: 0.1px solid rgb(32, 137, 185);
-    color: rgb(255, 183, 183);
+    color: rgb(240, 10, 10);
     border-radius: 5px;
     letter-spacing: 3px;
     animation: ease-in;
@@ -129,11 +129,11 @@ button{
     display: inline-block;
     font-size: 16px;
     margin: 15px 20vw;
-    margin-left: 24vw;
+    margin-left: 20rem;
     
 
     cursor: pointer;
-    -webkit-transition-duration: 0.4s; /* Safari */
+     -webkit-transition-duration: 0.4s;  /*Safari */
     transition-duration: 0.4s;
     text-overflow: clip;
     font-weight: bold;
@@ -142,7 +142,7 @@ button{
     
 }
 button:hover{
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.5),0 10px 40px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.5),0 10px 40px 0 rgba(0, 0, 0, 0.19); 
     /* border: 1px solid black; */
     /* transition-delay: .3s; */
     /* font-style: italic; */
